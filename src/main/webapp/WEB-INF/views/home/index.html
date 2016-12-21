@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link href="assets/home/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/home/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style>
+html{
+	font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";
+}
+.text-center{
+	text-align: center;
+}
+.slider {
+	margin-top: 1px;
+}
+.slider, .slider > .slides{
+	height: 500px !important;
+}
+.slider .indicators{
+	z-index: 100;
+	bottom: 10px;
+}
+.slider .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 4px;
+    width: 24px;
+    margin: 0 5px;
+    background-color: #909090;
+    transition: background-color .3s;
+    border-radius: 0;
+}
+.advantage > div.col{
+	height: 120px;
+}
+.advantage-item{
+	display: inline-block;
+	height: 120px;
+	width: 100%;
+}
+.advantage-item .special-left{
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 20px;
+	color: #333333;
+}
+.advantage-item .title{
+	display: block;
+	font-size: 24px;
+}
+.advantage-item .desc{
+	display: block;
+	color: #666666;
+}
+.advantage-item:hover .title{
+	color: #e65100;
+}
+ul.domain {
+	text-align: center;
+}
+ul.domain > li {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 15px 30px; 
+}
+
+ul.domain > li > a {
+	display: block;
+	height: 90px;
+	width: 90px;
+	font-size: 1.5em;
+	line-height: 90px;
+	color: #ffffff;
+	vertical-align: middle;
+	background-color: #f3f3f3;
+	border-radius: 50%;
+}
+ul.domain > li > a.line-2 {
+	line-height: 1em;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img alt="LOGO" src="assets/home/images/logo.png" style="height: 50px; margin-top: 8px;"/></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">产品服务</a></li>
+        <li><a href="#">作品案例</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="admin">网站管理</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">产品服务</a></li>
+        <li><a href="#">作品案例</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">栏目</i></a>
+    </div>
+  </nav>
+
+  <div class="slider-outer">
+	  <div class="slider">
+	    <ul class="slides">
+	      <li>
+	        <img src="assets/home/images/banner/1.jpg"/> <!-- random image -->
+	        <div class="caption center-align">
+	          <h3>This is our big Tagline!</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="assets/home/images/banner/2.jpg"/> <!-- random image -->
+	        <div class="caption left-align">
+	          <h3>Left Aligned Caption</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="assets/home/images/banner/3.jpg"/> <!-- random image -->
+	        <div class="caption right-align">
+	          <h3>Right Aligned Caption</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="assets/home/images/banner/4.jpg"/> <!-- random image -->
+	        <div class="caption center-align">
+	          <h3>This is our big Tagline!</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	    </ul>
+	  </div>
+  </div>
+  
+  <div class="grey lighten-2">
+  	<div class="container">
+  		<div class="row advantage" style="margin-bottom: 0;">
+  			<div class="col s12 m3 grey lighten-3">
+  				<a class="advantage-item" href="#">
+  					<span class="special-left">
+  						<span class="title">专业</span>
+  						<span class="desc">一流专业的设计团队</span>
+  					</span>
+  				</a>
+  			</div>
+  			<div class="col s12 m3 grey lighten-4">
+  				<a class="advantage-item" href="#">
+  					<span class="special-left">
+  						<span class="title">实</span>
+  						<span class="desc">一流专业的设计团队</span>
+  					</span>
+  				</a>
+  			</div>
+  			<div class="col s12 m3 grey lighten-3">
+  				<a class="advantage-item" href="#">
+  					<span class="special-left">
+  						<span class="title">多</span>
+  						<span class="desc">一流专业的设计团队</span>
+  					</span>
+  				</a>
+  			</div>
+  			<div class="col s12 m3 grey lighten-4">
+  				<a class="advantage-item" href="#">
+  					<span class="special-left">
+  						<span class="title">新</span>
+  						<span class="desc">一流专业的设计团队</span>
+  					</span>
+  				</a>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  
+  <div class="" style="background-color: #fafafa;">
+	  <div class="container">
+	    <div class="section">
+		  <div class="header text-center">
+		  	<h3>领先、精美、实用的设计产品</h3>
+		  </div>
+	      <!--   Icon Section   -->
+	      <div class="row">
+	        <div class="col s12 m4">
+	        	 <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="assets/home/images/p1.png"/>
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">设计印刷<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
+	        </div>
+	        <div class="col s12 m4">
+	        		<div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="assets/home/images/p2.png"/>
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">户外广告<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
+	        </div>
+	        <div class="col s12 m4">
+	        		<div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="assets/home/images/p3.png"/>
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">卡片标牌<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">This is a link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+  </div>   
+
+  <div class="container">
+    <div class="section">
+	  <div class="header text-center">
+	  	<h3>科学友好的设计理念</h3>
+	  </div>
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">快速发展</h5>
+
+            <p class="light">我们做的大部分重担你提供一个默认的风格,把我们的自定义组件。此外,我们精致的动画和过渡为开发人员提供一个流畅的体验。</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">用户体验优先</h5>
+
+            <p class="light">利用材料设计的要素和原则,我们可以创建一个框架,包含组件和动画,为用户提供更多的反馈。此外,一个跨所有平台允许底层响应系统</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">易于相处</h5>
+
+            <p class="light">我们提供了详细的文档以及特定的代码示例来帮助新用户开始。我们也总是开放的反馈,可以回答任何问题用户可能有实现。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+	<div class="" style="background-color: #fafafa;">
+		<div class="container grey lighten-4">
+			<div class="row">
+				<div class="col s-hide m6">
+					<img alt="" src="assets/home/images/s1.png" style="width: 100%;"/>
+				</div>
+				<div class="col s12 m6 text-center">
+					<br/><br/><br/><br/>
+					<img alt="" src="assets/home/images/w1.jpg" style="width: 30%; height: 30%;"/>
+					<h3>真诚的服务理念</h3>
+					<p class="light" style="margin: auto 15%;">我们提供了详细的文档以及特定的代码示例来帮助新用户开始。我们也总是开放的反馈,可以回答任何问题用户可能有实现。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="">
+		<div class="container">
+			<div class="header text-center">
+				<h3>服务行业领域</h3>
+			</div>
+			<div class="row">
+				<div class="col m12">
+					<ul class="domain">
+						<li><a class="amber" href="#">地产</a></li>
+						<li><a class="orange darken-3" href="#">汽车</a></li>
+						<li><a class="brown darken-1" href="#">餐饮</a></li>
+						<li><a class="red lighten-2 line-2" href="#">政府<br/>机构</a></li>
+						<li><a class="red lighten-2 line-2" href="#">个体<br/>企业</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6 center grey darken-2">
+        	<img alt="" src="assets/home/images/m1.png" style="width: 100%; height: 100%;"/>
+        </div>
+        <div class="col s12 m6 center">
+        	<div class="grey">
+        		<div>一对一专业设计</div>
+        		<div>全国接单</div>
+        		<div>乌市送货&nbsp; 全国发货</div>
+        	</div>
+        	<div>
+        		<div>乌鲁木齐创馨天美广告有限公司</div>
+        		<div>Urumqi Chong Hing days beauty Advertings Co.Ltd.</div>
+        		
+        		<div>总公司地址：乌鲁木齐市新市区天津南路银座商住楼A栋904室</div>
+        		<div>服务热线：0991-6220682 15109009958</div>
+        		<div>分部地址：阿勒泰市布尔津县百花园路44号 </div>
+				<div>电话：18509055596</div>
+				<div>投诉电话：15201631669</div>
+        	</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  	
+  <div class="container hide">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/home/images/p7.jpg" alt="Unsplashed background img 3"/></div>
+  </div>
+
+  <footer class="page-footer" style="background-color: #54504C;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="deep-orange-text darken-2">公司简介</h5>
+          <p class="grey-text text-lighten-4">我们是一个团队工作的大学生在这个项目中像我们的全职工作。任何数量将帮助支持和继续发展这个项目,我将非常感谢。</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="deep-orange-text darken-2">本站导航</h5>
+          <ul>
+            <li><a class="white-text" href="#!">产品服务</a></li>
+            <li><a class="white-text" href="#!">作品案例</a></li>
+            <li><a class="white-text" href="#!">公司简介</a></li>
+            <li><a class="white-text" href="#!">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="deep-orange-text darken-2">友情链接</h5>
+          <ul>
+            <li><a class="white-text" href="#!">创馨设计工作室</a></li>
+            <li><a class="white-text" href="#!">E-Order电子菜谱系统</a></li>
+            <li><a class="white-text" href="#!">新疆天网</a></li>
+            <li><a class="white-text" href="#!">中国设计网</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <span class="copyright center">Copyright©2016 乌鲁木齐创馨天美广告有限公司 cxtianmei.com 版权所有</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="icp">京ICP证0600000号</span>
+      <span style="float:right;"><a class="brown-text text-lighten-3" href="http://materializecss.com">千仞溪工作室</a> <span>友情制作</span></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/home/js/materialize.js"></script>
+  <script src="assets/home/js/init.js"></script>
+  
+  <script type="text/javascript">
+  	$(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+  </script>
+
+  </body>
+</html>
