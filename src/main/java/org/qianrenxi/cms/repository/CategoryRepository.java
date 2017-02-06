@@ -9,4 +9,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 public interface CategoryRepository extends JpaRepository<Category, Long>, JpaSpecificationExecutor<Category> {
 
 	List<Category> findByParentIsNull();
+	
+	List<Category> findByParentId(Long parentId);
 }

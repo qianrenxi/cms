@@ -10,7 +10,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class CategoryService extends BaseCrudService<CategoryRepository, Category, Long> {
 
-	public List<Category> findRoots(){
+	public List<Category> getRoots() {
 		return repository.findByParentIsNull();
+	}
+
+	public List<Category> getChildren(Long parentId) {
+		if (null != parentId) {
+			return repository.findByParentId(parentId);
+		} else {
+			return getRoots();
+		}
 	}
 }

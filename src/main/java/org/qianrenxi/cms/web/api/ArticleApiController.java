@@ -32,9 +32,24 @@ public class ArticleApiController {
 	public Article save(@RequestBody Article article) {
 		return articleService.save(article);
 	}
-	
+
 	@RequestMapping(value = "{id}/delete", method = RequestMethod.DELETE)
-	public void deleteById(@PathVariable Long id){
+	public void deleteById(@PathVariable Long id) {
 		articleService.delete(id);
+	}
+
+	@RequestMapping(value = "delete", method = RequestMethod.DELETE)
+	public void delete(@RequestBody Long[] ids) {
+		articleService.delete(ids);
+	}
+
+	@RequestMapping(value = "publish", method = RequestMethod.PUT)
+	public void publish(@RequestBody Long[] ids) {
+		articleService.publish(ids);
+	}
+	
+	@RequestMapping(value = "disPublish", method = RequestMethod.PUT)
+	public void disPublish(@RequestBody Long[] ids) {
+		articleService.disPublish(ids);
 	}
 }
